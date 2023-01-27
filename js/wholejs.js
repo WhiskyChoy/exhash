@@ -458,7 +458,7 @@ function initDrawingBoard() {
             tmpgrouparray.push(tmp);
         }
 
-        var tmpleftpos = 420;
+        var tmpleftpos = 620;
         var tmptoppos = ind * (bucketsize + 1) * cellheight + ind * 10 + 10;
         j_points.push(tmptoppos + ((bucketsize + 1) * cellheight) / 2);
         var tmpgroup = new fabric.Group(tmpgrouparray, {
