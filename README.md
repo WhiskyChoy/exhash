@@ -8,7 +8,7 @@ It's better to review the theory of Extendible hashing first before using this t
 
 ### Prerequisites
 
-You just need a web browser to open this simulator. To start this simulator just click [here](https://devimam.github.io/exhash/).
+You just need a web browser to open this simulator. To start this simulator just click [here](https://whiskychoy.github.io/exhash/).
 
 ### Installation
 
