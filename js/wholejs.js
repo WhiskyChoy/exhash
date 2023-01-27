@@ -30,7 +30,6 @@ var cellwidth = 400; ///keep 10 offset in both sides
 var bucketwidth = 440; ///cell width including the padding
 var j_points = [];///to save the middle points of each j block
 var mid_points = []; ///to save the middle points of each cell of main hash structure
-var tmpleftpos = 620;
 
 var canvas;
 /*end of global declaration*/
@@ -330,7 +329,7 @@ function initCanvas(callback) {
     
     var rightsidewidth=document.getElementById('rightside').clientWidth-20;///20px for padding of rightside in each side 10
     var calcmaxwidth=rightsidewidth;
-    var drawmaxwidth=tmpleftpos+bucketwidth+30;
+    var drawmaxwidth=840+220+30;
     if(calcmaxwidth<drawmaxwidth) calcmaxwidth=drawmaxwidth;
     canvas.setWidth(calcmaxwidth*canvas.getZoom());
     
@@ -459,11 +458,11 @@ function initDrawingBoard() {
             tmpgrouparray.push(tmp);
         }
 
-        var tmpleftpos = tmpleftpos;
+        var tmpleftpos = 840;
         var tmptoppos = ind * (bucketsize + 1) * cellheight + ind * 10 + 10;
         j_points.push(tmptoppos + ((bucketsize + 1) * cellheight) / 2);
         var tmpgroup = new fabric.Group(tmpgrouparray, {
-            left: tmpleftpos,
+            left: 840,
             top: tmptoppos
         });
         tmpgroup.selectable = false;
@@ -475,7 +474,7 @@ function initDrawingBoard() {
     for (var r = 0; r < Math.pow(2, i); r++) {
         var st = r;
         var end = map[r];
-        var line1 = new fabric.Line([leftpos + cellwidth+interval, toppos + mid_points[st], tmpleftpos, j_points[end]], {strokeWidth: 3, stroke: '#ffff00'});
+        var line1 = new fabric.Line([leftpos + cellwidth+interval, toppos + mid_points[st], 840, j_points[end]], {strokeWidth: 3, stroke: '#ffff00'});
         linegrouparray.push(line1);
         ///canvas.add(line1);
     }
