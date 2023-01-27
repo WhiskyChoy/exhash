@@ -26,8 +26,8 @@ var real_keys=[[],[]]; ///to store the real keys
 var unit = 40; ///read height of each cell
 var interval = 20; ///gap between two cells
 var cellheight = unit + interval; ///total height=real height+gap
-var cellwidth = 200; ///keep 10 offset in both sides
-var bucketwidth = 220; ///cell width including the padding
+var cellwidth = 400; ///keep 10 offset in both sides
+var bucketwidth = 440; ///cell width including the padding
 var j_points = [];///to save the middle points of each j block
 var mid_points = []; ///to save the middle points of each cell of main hash structure
 
